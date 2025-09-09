@@ -1,17 +1,31 @@
+
 package Bankingapp;
 
+// File class: for file path and file operations
 import java.io.File;
+// FileInputStream: for reading bytes from a file
 import java.io.FileInputStream;
+// FileOutputStream: for writing bytes to a file
 import java.io.FileOutputStream;
+// IOException: handles input/output errors
 import java.io.IOException;
+// ObjectInputStream: for reading objects from a file (serialization)
 import java.io.ObjectInputStream;
+// ObjectOutputStream: for writing objects to a file (serialization)
 import java.io.ObjectOutputStream;
+// Serializable: interface for objects that can be saved/loaded
 import java.io.Serializable;
+// ArrayList: resizable array implementation
 import java.util.ArrayList;
+// Date: represents date and time
 import java.util.Date;
+// HashMap: key-value map implementation
 import java.util.HashMap;
+// List: interface for lists
 import java.util.List;
+// Map: interface for maps
 import java.util.Map;
+// Scanner: for reading user input from console
 import java.util.Scanner;
 
 /**

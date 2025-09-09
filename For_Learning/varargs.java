@@ -4,9 +4,12 @@ public class varargs {
     public static float marsGravity = 3.71f;
     public int sumOfAllNums(String name,int p, int... y){
         int sum = 0;
-        for (int num:y)
+        for (int num:y) 
             sum += num;
         return sum;
+    }
+    public static float getEarthGravity() {
+        return 9.81f;
     }
     public static void main(String[] args) {
         varargs vl = new varargs();

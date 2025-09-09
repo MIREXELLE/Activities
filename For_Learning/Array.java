@@ -25,5 +25,5 @@ public class Array {
         System.out.println(mammals[2]); // donkey
     
     }
-    }
+}
 

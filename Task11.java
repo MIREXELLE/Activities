@@ -10,8 +10,9 @@ class book{
         this.yearPublished = yearPublished;
         this.price = price;
     }
+
     public String toString(){
-        return "Title: \"" + title + "\"\nAuthor: \"" + author + "\"\nYear Published: " + yearPublished + "\nPrice: " + price;
+        return "Title: \"" + title + "\"\nAuthor: \"" + author + "\"\nYear Published: " + yearPublished + "\nPrice: " + price + "$";
     }
 }
 public class Task11 {
@@ -19,7 +20,7 @@ public class Task11 {
         book b = new book("Romio and Jolyet","Maxwell",2025,150);
         book b2 = new book("Slindir Min", "Mirexsele", 2025, 120);
         System.out.println(b);
-        System.out.println("\n");
+        System.out.print("\n");
         System.out.println(b2);
 
     }

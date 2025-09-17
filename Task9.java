@@ -1,4 +1,3 @@
-
 import static java.lang.Math.multiplyExact;
 import static java.lang.Math.floorDiv;
 import static java.lang.Math.addExact;
@@ -23,8 +22,8 @@ public class Task9{
         public static float divide(int a, int b) {
             if(b == 0) {
                 System.out.println("Division: Cannot divide by zero");
+                return  0;
             }
-
             return floorDiv(a, b);
         }
 
@@ -35,7 +34,7 @@ public class Task9{
             System.out.print("Enter second number: ");
             int b = scan.nextInt();
             System.out.println("Addition: " + add(a, b));
-            System.out.println("Substraction: " + subtract(a, b));
+            System.out.println("Subtraction: " + subtract(a, b));
             System.out.println("Multiplication: " + multiply(a, b));
             System.out.println("Division: " + divide(a, b));
 

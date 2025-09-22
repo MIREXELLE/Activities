@@ -16,7 +16,7 @@ public class scoreToGrade {
         System.out.println("Your Grade is C");
     } else if (score >= 60){
         System.out.println("Your Grade is D");
-    } else if (score < 60) {
+    } else if (score < 59) {
         System.out.println("Your Grade is F");
     } else {
         System.out.println("Invalid grade");

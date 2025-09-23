@@ -10,7 +10,7 @@ public class sumAndAveArray {
         for (double num : nums){
             sum += num;
         }
-        double average = sum / nums.length;
+        double average = sum /  nums.length;
         System.out.println("The sum is : " + sum);
         System.out.println("The average is : " + average);
     }

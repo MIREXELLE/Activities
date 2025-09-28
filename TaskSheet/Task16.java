@@ -1,4 +1,6 @@
 package TaskSheet;
+import java.util.Random;
+import java.util.Scanner;
 
 interface Animal {
     boolean feed(boolean timeToEat);
@@ -6,6 +8,8 @@ interface Animal {
     void pet();
 }
 class Gorilla implements Animal {
+    private Random random = new Random();
+
     @Override
     public boolean feed(boolean timeToEat) {
         // put gorilla food into cage
@@ -25,7 +29,12 @@ class Gorilla implements Animal {
     @Override
     public void pet() {
         // pet at your own risk
-        System.out.println("Careful! Petting gorilla......");
+        //Added randomizer for 50/50 chance of getting attacked
+        if(random.nextBoolean()) {
+            System.out.println("Careful! The gorilla attacked you!");
+        } else {
+            System.out.println("You gently pet the gorilla. It seems happy!");
+        }
     }
 }
 

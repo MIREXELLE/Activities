@@ -1,8 +1,10 @@
+package TaskSheet;
+
 interface Shape {
     double calculateArea();
     double calculatePerimeter();
 }
-// AbstractShape abstract class
+// TaskSheet.AbstractShape abstract class
 abstract class AbstractShape implements Shape {
     protected String color;
     protected double length;
@@ -14,12 +16,9 @@ abstract class AbstractShape implements Shape {
         this.width = width;
     }
     //implementations for calculateArea and calculatePerimeter
-    @Override
-    public abstract double calculateArea();
-    @Override
-    public abstract double calculatePerimeter();
+    //will be provided by concrete subclasses
 }
-// Circle class
+// TaskSheet.Circle class
     class Circle extends AbstractShape {
     private final double radius;
 
@@ -37,14 +36,14 @@ abstract class AbstractShape implements Shape {
         return 2 * Math.PI * radius;
     }
     void displayDetails(){
-        System.out.println("\n-----Circle Details-----\n");
+        System.out.println("\n-----TaskSheet.Circle Details-----\n");
         System.out.println("The color of circle is: " + this.color);
         System.out.println("The area of circle is: " + this.calculateArea());
         System.out.println("The perimeter of circle is: " + this.calculatePerimeter());
     }
 }
 
-//Rectangle Class
+//TaskSheet.Rectangle Class
     class Rectangle extends AbstractShape {
 
     public Rectangle(String color){super(color,20,10);}
@@ -58,7 +57,7 @@ abstract class AbstractShape implements Shape {
         return 2 * (length * width);
     }
     void displayDetails(){
-        System.out.println("\n-----Rectangle Details-----\n");
+        System.out.println("\n-----TaskSheet.Rectangle Details-----\n");
         System.out.println("The color of rectangle is: " + this.color);
         System.out.println("The area of rectangle is: " + this.calculateArea());
         System.out.println("The perimeter of rectangle is: " + this.calculatePerimeter());
@@ -71,7 +70,6 @@ public class Task15 {
         Circle circle = new Circle("red", 5);
         Rectangle rectangle = new Rectangle("Red");
         circle.displayDetails();
-        System.out.println();
         rectangle.displayDetails();
     }
 }

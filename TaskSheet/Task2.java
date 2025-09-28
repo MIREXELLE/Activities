@@ -1,3 +1,5 @@
+package TaskSheet;
+
 public class Task2 {
     public static void main(String[] args) {
         // Primitives: byte, short, int, float, char, boolean (excluding long and double)

@@ -1,3 +1,5 @@
+package TaskSheet;
+
 class Point {
     private double x;
     private double y;
@@ -8,7 +10,7 @@ class Point {
     }
 
     public void print() {
-        System.out.println("Point: "+"(" + x + "," + y + ")");
+        System.out.println("TaskSheet.Point: "+"(" + x + "," + y + ")");
     }
     public void scale() {
         this.x /= 2;

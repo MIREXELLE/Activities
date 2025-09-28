@@ -1,6 +1,5 @@
 package TaskSheet;
 import java.util.Random;
-import java.util.Scanner;
 
 interface Animal {
     boolean feed(boolean timeToEat);

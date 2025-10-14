@@ -1,3 +1,5 @@
+package TaskSheet_2;
+
 class ArithmeticTask {
 
     public static void main (String[] args){

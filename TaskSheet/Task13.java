@@ -20,7 +20,7 @@ class vehicle{
          }
 
          void displayDetails(){
-            System.out.println("TaskSheet.Car Details: ");
+            System.out.println("Car Details\n");
             System.out.println("Make: " + this.make);
             System.out.println("Model: " + this.model);
             System.out.println("Year: " + this.year);
